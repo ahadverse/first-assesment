@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Ahad Hossain — Web Designer & Developer</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -15,71 +15,29 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <style>
-      .nav-item-custom {
-        padding: 5px 10px;
-        transition: all 0.3s ease;
-        text-decoration: underline;
-      }
-
-      .nav-item-custom:hover {
-        background-color: white;
-        color: #0dcaf0 !important;
-        border-radius: 50px;
-        padding: 5px 10px;
-        text-decoration: underline;
-      }
-      .carousel-img {
-        height: 90vh;
-        object-fit: cover;
-      }
-      .hover-card {
-        transition: all 0.3s ease;
-      }
-      .nav-active {
-        background-color: white;
-        color: #0dcaf0 !important;
-        border-radius: 50px;
-        padding: 5px 10px;
-        text-decoration: underline;
-      }
-
-      .hover-card:hover {
-        border: #0dcaf0 1px solid;
-        transform: translateY(-6px);
-        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
-      }
-      footer a {
-        text-decoration: none;
-        display: inline-block;
-        line-height: 1;
-      }
-
-      footer a:hover {
-        text-decoration: none;
-      }
-
-      @media (max-width: 768px) {
-        .carousel-img {
-          height: 400px;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient">
+    <nav
+      id="top"
+      class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient sticky-top"
+    >
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="https://i.ibb.co.com/rRVbq5T1/0ba6f5ba-e476-49f8-8f99-a8fcba54aa76-removebg-preview.png"
-            alt="Logo"
+            alt="Ahad Hossain logo"
             height="50"
           />
         </a>
 
-        <!-- Mobile Toggle Button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -92,44 +50,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
-                class="nav-link nav-active text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link nav-active text-white nav-item-custom fw-bold px-3"
                 href="index.html"
                 >Home</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="service.html"
                 >Service</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="about.html"
                 >About Us</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
-                href="/contact.html"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
+                href="contact.html"
                 >Contact Us</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="portfolio.html"
                 >Portfolio</a
               >
@@ -138,10 +91,11 @@
         </div>
       </div>
     </nav>
+
     <!-- Carousel Section -->
     <div
       id="carouselExampleControls"
-      class="carousel slide"
+      class="carousel slide carousel-fade"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
@@ -149,22 +103,43 @@
           <img
             src="https://t4.ftcdn.net/jpg/04/19/26/97/360_F_419269782_9LsP3TQndMVnZ2j3ZhTPhMjaqQpFAth9.jpg"
             class="img-fluid w-100 carousel-img"
-            alt="..."
+            alt="Designer working at a desk"
           />
+          <div
+            class="carousel-caption carousel-caption-box rounded-3 p-4 d-none d-md-block"
+          >
+            <h2 class="fw-bold text-white">Clean, responsive websites</h2>
+            <p class="mb-3">Designed mobile-first, built to load fast.</p>
+            <a href="portfolio.html" class="btn btn-info px-4">View My Work</a>
+          </div>
         </div>
         <div class="carousel-item">
           <img
             src="https://t3.ftcdn.net/jpg/05/52/79/46/360_F_552794679_X6Jg3Hn2MdCHvMNTyBPzHx5vOTqoaE2e.jpg"
-            alt="..."
+            alt="Code on a laptop screen"
             class="img-fluid w-100 carousel-img"
           />
+          <div
+            class="carousel-caption carousel-caption-box rounded-3 p-4 d-none d-md-block"
+          >
+            <h2 class="fw-bold text-white">Hand-coded front-end</h2>
+            <p class="mb-3">HTML, CSS, JavaScript &amp; Bootstrap done right.</p>
+            <a href="service.html" class="btn btn-info px-4">My Services</a>
+          </div>
         </div>
         <div class="carousel-item">
           <img
             src="https://i.ibb.co.com/S4HvjCfR/wmremove-transformed.jpg"
             class="img-fluid w-100 carousel-img"
-            alt="..."
+            alt="Creative workspace"
           />
+          <div
+            class="carousel-caption carousel-caption-box rounded-3 p-4 d-none d-md-block"
+          >
+            <h2 class="fw-bold text-white">Let's work together</h2>
+            <p class="mb-3">From first idea to final launch.</p>
+            <a href="contact.html" class="btn btn-info px-4">Get in Touch</a>
+          </div>
         </div>
       </div>
       <button
@@ -186,38 +161,58 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <br />
-    <br />
+
+    <!-- Stats Band (animated counters) -->
+    <section class="stat-band py-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="25" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="18" data-suffix="+">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="3" data-suffix="+">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- About Us Section -->
     <section class="py-5 bg-light">
       <div class="container">
-        <div class="row align-items-center">
-          <!-- Image -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900"
-              class="img-fluid"
-              alt="About Us"
+              class="img-fluid rounded-3 shadow-sm"
+              alt="Ahad Hossain at work"
             />
           </div>
 
           <div class="col-lg-6">
+            <span class="section-eyebrow">About Me</span>
             <h2 class="fw-bold mb-4">
-              About <span class="text-info">Us</span>
+              Hi, I'm <span class="text-info">Ahad Hossain</span>
             </h2>
 
-            <p class="text-muted lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              repellat iure laboriosam cum voluptatum, nam minima deserunt aut?
-              Distinctio voluptatibus dolor quaerat quo omnis illo sequi at
-              velit, odit quod!
+            <p class="fs-5">
+              I'm a web designer and front-end developer based in Sirajganj,
+              Bangladesh. I build clean, responsive websites with HTML, CSS,
+              JavaScript and Bootstrap — turning ideas into fast, mobile-friendly
+              experiences that are easy to use and easy to maintain.
             </p>
 
-            <div class="mt-5 text-center">
-              <a
-                href="#"
-                class="btn btn-info text-decoration-none text-white fw-bold nav-item-custom px-5 py-2"
-              >
+            <div class="mt-4">
+              <a href="about.html" class="btn btn-info text-white px-5 py-2">
                 Learn More
               </a>
             </div>
@@ -225,137 +220,177 @@
         </div>
       </div>
     </section>
-    <br />
-    <br />
-    <!-- Mission & Vision Section -->
+
+    <!-- Why Choose Me -->
     <section class="py-5">
       <div class="container">
-        <!-- Heading -->
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">Why Choose Me</span>
+          <h2 class="fw-bold">What you get working with me</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-4">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-phone"></i
+                ></span>
+                <h5 class="fw-bold">Responsive Design</h5>
+                <p class="mb-0">
+                  Mobile-first layouts that look sharp on phones, tablets and
+                  desktops.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-4">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-code-slash"></i
+                ></span>
+                <h5 class="fw-bold">Clean Code</h5>
+                <p class="mb-0">
+                  Semantic, well-structured markup that's easy to read and
+                  maintain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-4">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-lightning-charge"></i
+                ></span>
+                <h5 class="fw-bold">Fast Delivery</h5>
+                <p class="mb-0">
+                  Clear timelines and steady progress, so your site ships on
+                  schedule.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-4">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-headset"></i
+                ></span>
+                <h5 class="fw-bold">Ongoing Support</h5>
+                <p class="mb-0">
+                  I'm around after launch for fixes, tweaks and future updates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8">
-            <h3 class="fw-bold mb-3 fs-1">Mission &amp; Vision</h3>
-
-            <p class="text-muted fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a
-              ratione veniam maiores voluptates expedita laboriosam veritatis
-              praesentium provident accusamus mollitia quos dolores asperiores
-              recusandae officiis fugiat, cumque assumenda ducimus.
+            <span class="section-eyebrow">What Drives Me</span>
+            <h2 class="fw-bold mb-3">Mission &amp; Vision</h2>
+            <p class="fs-5">
+              A simple belief: good web design should be fast, accessible and
+              within reach for everyone — not just big companies.
             </p>
           </div>
         </div>
 
-        <!-- Cards -->
-        <div class="row mt-5 g-4">
-          <!-- Mission -->
+        <div class="row mt-4 g-4">
           <div class="col-md-6">
-            <div class="card h-100 shadow-sm rounded-3 hover-card">
+            <div class="card h-100 hover-card">
               <div class="card-body p-4">
-                <h2 class="text-primary fw-bold mb-4">My Mission</h2>
-
-                <p class="card-text text-muted fs-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                  asperiores? Nisi qui illo maiores dicta? Error nam
-                  voluptatibus distinctio consectetur laborum, est, recusandae,
-                  beatae a voluptatem enim ex et possimus!
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-bullseye"></i
+                ></span>
+                <h3 class="fw-bold mb-3">My Mission</h3>
+                <p class="fs-5 mb-0">
+                  To help small businesses and individuals get online with
+                  websites that are fast, accessible and genuinely pleasant to
+                  use — without the bloat.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Vision -->
           <div class="col-md-6">
-            <div class="card h-100 shadow-sm rounded-3 hover-card">
+            <div class="card h-100 hover-card">
               <div class="card-body p-4">
-                <h2 class="text-success fw-bold mb-4">My Vision</h2>
-
-                <p class="card-text text-muted fs-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus, incidunt autem. Et magnam exercitationem quisquam
-                  similique quibusdam, omnis mollitia accusamus nostrum neque
-                  non illum, tenetur possimus? Mollitia exercitationem
-                  repudiandae laudantium.
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-rocket-takeoff"></i
+                ></span>
+                <h3 class="fw-bold mb-3">My Vision</h3>
+                <p class="fs-5 mb-0">
+                  To keep growing into a full-stack developer who ships polished
+                  products, and to make quality web design affordable for my
+                  community.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <button
-            class="btn btn-info text-decoration-none text-white fw-bold nav-item-custom px-5 py-2"
-          >
-            Learn More
-          </button>
         </div>
       </div>
     </section>
 
-    <!-- professional services section -->
-    <section class="py-5 bg-light">
+    <!-- Professional Services Section -->
+    <section class="py-5">
       <div class="container">
-        <!-- Heading -->
         <div class="text-center mb-5">
-          <h1 class="fs-2 fw-bold">Professional Services</h1>
-          <p class="text-muted fs-6">
-            Building responsive and high-performance applications using React,
-            Bootstrap, and modern frontend technologies.
+          <span class="section-eyebrow">Solutions</span>
+          <h2 class="fw-bold">Professional Services</h2>
+          <p class="fs-6">
+            Everything you need to launch a modern website, done end to end.
           </p>
         </div>
 
-        <!-- Service Cards -->
         <div class="row g-4">
-          <!-- Card 1 -->
           <div class="col-md-6 col-lg-4">
-            <div
-              class="card h-100 text-center shadow-sm hover-card"
-              style="border-radius: 1rem"
-            >
-              <div
-                class="card-body d-flex flex-column justify-content-start p-5"
-              >
-                <h3 class="fw-bold mb-4">Web Design</h3>
-
-                <p class="text-muted">
-                  Building responsive and high-performance applications using
-                  React, Bootstrap, and modern frontend technologies.
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-5">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-palette"></i
+                ></span>
+                <h4 class="fw-bold mb-3">Web Design</h4>
+                <p class="mb-0">
+                  Modern, responsive layouts designed mobile-first with
+                  Bootstrap, so your site looks great on every screen.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Card 2 -->
           <div class="col-md-6 col-lg-4">
-            <div
-              class="card h-100 text-center shadow-sm hover-card"
-              style="border-radius: 1rem"
-            >
-              <div
-                class="card-body d-flex flex-column justify-content-start p-5"
-              >
-                <h3 class="fw-bold mb-4">SEO</h3>
-
-                <p class="text-muted">
-                  Lorem iuidem istlaceat sit aliquam sunt accusamus ex adipisci
-                  amet.
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-5">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-code-square"></i
+                ></span>
+                <h4 class="fw-bold mb-3">Web Development</h4>
+                <p class="mb-0">
+                  Hand-coded HTML, CSS and JavaScript with clean, maintainable
+                  structure and fast load times.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Card 3 -->
           <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
-            <div
-              class="card h-100 text-center shadow-sm hover-card"
-              style="border-radius: 1rem"
-            >
-              <div
-                class="card-body d-flex flex-column justify-content-start p-5"
-              >
-                <h3 class="fw-bold mb-4">Web Development</h3>
-
-                <p class="text-muted">
-                  Lorem iuidem istlaceat sit aliquam sunt accusamus ex adipisci
-                  amet.
+            <div class="card h-100 text-center hover-card">
+              <div class="card-body p-5">
+                <span class="feature-icon mb-3"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <h4 class="fw-bold mb-3">SEO Basics</h4>
+                <p class="mb-0">
+                  On-page SEO essentials — semantic markup, fast pages and clear
+                  content — so people can actually find you.
                 </p>
               </div>
             </div>
@@ -364,85 +399,86 @@
       </div>
     </section>
 
-    <!-- What Our Clients Say  -->
-    <section class="py-5">
+    <!-- What Our Clients Say -->
+    <section class="py-5 bg-light">
       <div class="container">
-        <!-- Heading -->
         <div class="text-center mb-5">
-          <h1 class="display-5">What Our Clients Say</h1>
+          <span class="section-eyebrow">Testimonials</span>
+          <h2 class="fw-bold">What Clients Say</h2>
         </div>
 
-        <!-- Testimonials -->
         <div class="row g-4">
-          <!-- Client 1 -->
           <div class="col-md-6 col-lg-4">
-            <div class="card text-center h-100 shadow-sm rounded-3 hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body p-4">
                 <img
                   src="https://randomuser.me/api/portraits/men/32.jpg"
                   class="rounded-circle mb-3"
-                  width="120"
-                  height="120"
-                  alt="Client Avatar"
+                  width="96"
+                  height="96"
+                  alt="Rakib Hasan"
                 />
-
-                <h3 class="mb-2">XVVS</h3>
-
-                <h5 class="fw-bold text-info fs-6 mb-4">Pran RFL Group</h5>
-
-                <p class="fs-6">
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fst-italic">
+                  "Ahad rebuilt our shop front and it finally looks right on
+                  mobile. Quick, patient and easy to work with."
                 </p>
+                <h5 class="fw-bold mb-0">Rakib Hasan</h5>
+                <span class="text-info small">Owner, Pran RFL reseller</span>
               </div>
             </div>
           </div>
 
-          <!-- Client 2 -->
           <div class="col-md-6 col-lg-4">
-            <div class="card text-center h-100 shadow-sm rounded-3 hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body p-4">
                 <img
                   src="https://randomuser.me/api/portraits/women/65.jpg"
                   class="rounded-circle mb-3"
-                  width="120"
-                  height="120"
+                  width="96"
+                  height="96"
                   alt="Jane Smith"
                 />
-
-                <h3 class="mb-2">Jane Smith</h3>
-
-                <h5 class="fw-bold text-info fs-6 mb-4">
-                  Marketing Director, Agency XYZ
-                </h5>
-
-                <p class="fs-6">
-                  "Sed ut perspiciatis unde omnis iste natus error sit
-                  voluptatem accusantium doloremque laudantium."
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="fst-italic">
+                  "Clean code and a design that matched our brand exactly. He
+                  explained every step in plain language."
                 </p>
+                <h5 class="fw-bold mb-0">Jane Smith</h5>
+                <span class="text-info small">Marketing Director, Agency XYZ</span>
               </div>
             </div>
           </div>
 
-          <!-- Client 3 -->
           <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
-            <div class="card text-center h-100 shadow-sm rounded-3 hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body p-4">
                 <img
                   src="https://randomuser.me/api/portraits/men/45.jpg"
                   class="rounded-circle mb-3"
-                  width="120"
-                  height="120"
+                  width="96"
+                  height="96"
                   alt="Mike Johnson"
                 />
-
-                <h3 class="mb-2">Mike Johnson</h3>
-
-                <h5 class="fw-bold text-info fs-6 mb-4">Freelance Designer</h5>
-
-                <p class="fs-6">
-                  "At vero eos et accusamus et iusto odio dignissimos ducimus
-                  qui blanditiis praesentium voluptatum."
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-half"></i>
+                </div>
+                <p class="fst-italic">
+                  "Delivered on time and stuck around for the little fixes
+                  afterward. Highly recommended."
                 </p>
+                <h5 class="fw-bold mb-0">Mike Johnson</h5>
+                <span class="text-info small">Freelance Designer</span>
               </div>
             </div>
           </div>
@@ -450,51 +486,95 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-info bg-opacity-75 text-white py-4 mt-5">
+    <!-- CTA Band -->
+    <section class="cta-band py-5">
+      <div class="container text-center py-3">
+        <h2 class="fw-bold mb-3">Have a project in mind?</h2>
+        <p class="fs-5 mb-4">
+          Let's turn your idea into a fast, good-looking website.
+        </p>
+        <a href="contact.html" class="btn btn-light btn-lg px-5 fw-bold"
+          >Start a Project</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer pt-5 pb-4">
       <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <img
+              src="https://i.ibb.co.com/rRVbq5T1/0ba6f5ba-e476-49f8-8f99-a8fcba54aa76-removebg-preview.png"
+              alt="Ahad Hossain logo"
+              height="46"
+              class="mb-3"
+            />
+            <p>
+              Web designer &amp; front-end developer crafting clean, responsive
+              websites that help people and small businesses look great online.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Quick Links</h5>
+            <div class="footer-links d-flex flex-column">
+              <a href="index.html">Home</a>
+              <a href="service.html">Service</a>
+              <a href="about.html">About Us</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <h5 class="mb-3">Contact</h5>
+            <p class="mb-2">
+              <i class="bi bi-geo-alt me-2"></i>Hosenpur, Sirajganj Sadar,
+              Sirajganj 6700
+            </p>
+            <p class="mb-2"><i class="bi bi-telephone me-2"></i>+880 1790-156861</p>
+            <p class="mb-0">
+              <i class="bi bi-envelope me-2"></i>ahadhossain@gmail.com
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Follow Me</h5>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
         <div class="row align-items-center">
-          <!-- Left -->
           <div class="col-md-8 text-center text-md-start">
             <p class="mb-1">
               &copy; <span id="year"></span> Ahad Hossain. All rights reserved.
             </p>
-
-            <p class="mb-0" id="currentDate"></p>
+            <p class="mb-0 small" id="currentDate"></p>
           </div>
-
-          <!-- Right -->
-          <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-twitter"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-linkedin"></i>
-            </a>
+          <div class="col-md-4 text-center text-md-end mt-2 mt-md-0">
+            <a href="#top" class="text-white"
+              ><i class="bi bi-arrow-up-circle me-1"></i>Back to top</a
+            >
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const now = new Date();
-
-      document.getElementById("year").textContent = now.getFullYear();
-
-      document.getElementById("currentDate").textContent = now.toString();
-    </script>
+    <script src="assets/main.js"></script>
   </body>
 </html>

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Contact — Ahad Hossain</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,69 +15,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <style>
-      .nav-item-custom {
-        padding: 5px 10px;
-        transition: all 0.3s ease;
-        text-decoration: underline;
-      }
-
-      .nav-item-custom:hover {
-        background-color: white;
-        color: #0dcaf0 !important;
-        border-radius: 50px;
-        padding: 5px 10px;
-        text-decoration: underline;
-      }
-      .carousel-img {
-        height: 90vh;
-        object-fit: cover;
-      }
-      .hover-card {
-        transition: all 0.3s ease;
-      }
-      .nav-active {
-        background-color: white;
-        color: #0dcaf0 !important;
-        border-radius: 50px;
-        padding: 5px 10px;
-        text-decoration: underline;
-      }
-      .hover-card:hover {
-        border: #0dcaf0 1px solid;
-        transform: translateY(-6px);
-        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
-      }
-      footer a {
-        text-decoration: none;
-        display: inline-block;
-        line-height: 1;
-      }
-
-      footer a:hover {
-        text-decoration: none;
-      }
-
-      @media (max-width: 768px) {
-        .carousel-img {
-          height: 400px;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient">
+    <nav
+      id="top"
+      class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient sticky-top"
+    >
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="https://i.ibb.co.com/rRVbq5T1/0ba6f5ba-e476-49f8-8f99-a8fcba54aa76-removebg-preview.png"
-            alt="Logo"
+            alt="Ahad Hossain logo"
             height="50"
           />
         </a>
 
-        <!-- Mobile Toggle Button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -89,44 +49,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="index.html"
                 >Home</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="service.html"
                 >Service</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="about.html"
                 >About Us</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link nav-active text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link nav-active text-white nav-item-custom fw-bold px-3"
                 href="contact.html"
                 >Contact Us</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="portfolio.html"
                 >Portfolio</a
               >
@@ -140,159 +95,391 @@
     <section
       class="d-flex align-items-center justify-content-center text-center text-white"
       style="
-        height: 85vh;
+        height: 80vh;
         background:
-          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-          url(&quot;https://static.vecteezy.com/system/resources/thumbnails/046/458/702/small/customer-support-center-contact-us-concept-customer-support-hotline-and-people-connection-photo.jpg?w=1600&quot;)
+          linear-gradient(rgba(8, 126, 151, 0.55), rgba(15, 23, 42, 0.55)),
+          url('https://static.vecteezy.com/system/resources/thumbnails/046/458/702/small/customer-support-center-contact-us-concept-customer-support-hotline-and-people-connection-photo.jpg?w=1600')
             center/cover;
       "
     >
       <div class="container">
-        <h1 class="display-2 fw-bold">Contact Us</h1>
-
-        <p class="lead my-4">
-          Discover amazing experiences and unforgettable adventures
-        </p>
-
-        <a
-          href="#"
-          class="btn btn-info btn-lg px-4 nav-item-custom text-white text-decoration-none"
-        >
-          Get Started
-        </a>
+        <h1 class="display-2 fw-bold text-white mb-4">Contact Me</h1>
+        <a href="#contact-form" class="btn btn-info btn-lg px-4">Send a Message</a>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact method cards -->
     <section class="py-5">
       <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center hover-card contact-method">
+              <div class="card-body p-4">
+                <span class="feature-icon"><i class="bi bi-geo-alt"></i></span>
+                <h5 class="fw-bold">Visit</h5>
+                <p class="mb-0">
+                  Hosenpur, Sirajganj Sadar,<br />Sirajganj 6700, Bangladesh
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center hover-card contact-method">
+              <div class="card-body p-4">
+                <span class="feature-icon"><i class="bi bi-telephone"></i></span>
+                <h5 class="fw-bold">Call</h5>
+                <p class="mb-0">
+                  <a href="tel:+8801790156861" class="text-decoration-none"
+                    >+880 1790-156861</a
+                  ><br />Sun – Thu, 9am – 8pm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center hover-card contact-method">
+              <div class="card-body p-4">
+                <span class="feature-icon"><i class="bi bi-envelope"></i></span>
+                <h5 class="fw-bold">Email</h5>
+                <p class="mb-0">
+                  <a
+                    href="mailto:ahadhossain@gmail.com"
+                    class="text-decoration-none"
+                    >ahadhossain@gmail.com</a
+                  ><br />I reply within a few hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact-form" class="py-5 bg-light">
+      <div class="container">
         <div class="text-center mb-5">
-          <h2 class="display-4 fw-bold">Contact us for Fast-Service</h2>
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="display-6 fw-bold">Let's Work Together</h2>
         </div>
 
         <div class="row g-5">
           <!-- Left -->
           <div class="col-lg-5">
-            <h5 class="fs-5 text-info text-decoration-none fw-bold">
-              Our Portfolio
-            </h5>
-
-            <p class="text-muted mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis eligendi fuga alias a iusto laborum! Veniam corporis
-              itaque adipisci ratione error illo doloremque omnis quae.
-              Repudiandae iste incidunt voluptas velit.
+            <h4 class="fw-bold">Tell me about your project</h4>
+            <p class="mt-3">
+              Whether you need a brand-new website, a redesign, or just some
+              advice, send me a message and I'll get back to you with the next
+              steps and a quote.
             </p>
 
             <ul class="list-unstyled mt-4">
-              <li class="mb-3">📍 Hosenpur, Sirajganj Sadar, Sirajganj 6700</li>
-
-              <li class="mb-3">📞 +880 1790-156861</li>
-
-              <li>✉️ ahadhossain@gmail.com</li>
+              <li class="mb-3">
+                <i class="bi bi-geo-alt text-info me-2"></i>Hosenpur, Sirajganj
+                Sadar, Sirajganj 6700
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-telephone text-info me-2"></i>+880 1790-156861
+              </li>
+              <li>
+                <i class="bi bi-envelope text-info me-2"></i>ahadhossain@gmail.com
+              </li>
             </ul>
           </div>
 
           <!-- Right -->
           <div class="col-lg-7">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Full Name</label>
-                <input type="text" class="form-control" placeholder="Name" />
+            <form class="needs-validation" novalidate>
+              <div
+                class="alert alert-success d-none"
+                id="formSuccess"
+                role="alert"
+              >
+                Thanks! Your message has been sent — I'll get back to you soon.
               </div>
 
               <div class="mb-3">
-                <label class="form-label">Email Address</label>
+                <label class="form-label" for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Your name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="email">Email Address</label>
                 <input
                   type="email"
                   class="form-control"
+                  id="email"
                   placeholder="name@example.com"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="phone">Phone (optional)</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="01700-000000"
                 />
               </div>
 
               <div class="mb-3">
-                <label class="form-label">Number</label>
-                <input type="text" class="form-control" placeholder="01704" />
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  rows="4"
+                  class="form-control"
+                  id="message"
+                  placeholder="Tell me a little about what you need…"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please add a short message.</div>
               </div>
 
-              <div class="mb-3">
-                <label class="form-label">Address</label>
-                <input type="text" class="form-control" placeholder="Sherpur" />
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea rows="4" class="form-control"></textarea>
-              </div>
-
-              <button
-                class="btn btn-info px-4 nav-item-custom text-white text-decoration-none"
-              >
-                Get Started
+              <button type="submit" class="btn btn-info text-white px-4">
+                Send Message
               </button>
             </form>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Google Map -->
-        <div class="mt-5">
-          <iframe
-            class="w-100 rounded"
-            height="450"
-            style="border: 0"
-            loading="lazy"
-            allowfullscreen
-            src="https://maps.google.com/maps?q=Computer%20Village%20Training%20Institute%20Sirajganj&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          >
-          </iframe>
+    <!-- Availability / Business hours + Map -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <span class="section-eyebrow">Availability</span>
+            <h3 class="fw-bold mb-4">Business Hours</h3>
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="hours-row">
+                  <span class="day">Sunday – Thursday</span>
+                  <span>9:00 AM – 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="day">Saturday</span>
+                  <span>10:00 AM – 4:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="day">Friday</span>
+                  <span class="text-info fw-semibold">Closed</span>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 mb-0">
+              <i class="bi bi-clock-history text-info me-2"></i>I usually reply to
+              messages within a few hours.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <iframe
+              class="w-100 rounded-3 shadow-sm"
+              height="360"
+              style="border: 0"
+              loading="lazy"
+              allowfullscreen
+              title="Location map"
+              src="https://maps.google.com/maps?q=Computer%20Village%20Training%20Institute%20Sirajganj&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Footer Section -->
-    <footer class="bg-info bg-opacity-75 text-white py-4 mt-5">
+
+    <!-- FAQ -->
+    <section class="py-5 bg-light">
       <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 class="display-6 fw-bold">Before You Reach Out</h2>
+        </div>
+
+        <div class="accordion" id="contactFaq">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c1"
+              >
+                How soon will you reply?
+              </button>
+            </h2>
+            <div
+              id="c1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#contactFaq"
+            >
+              <div class="accordion-body">
+                I usually respond within a few hours, and always within one
+                business day.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c2"
+              >
+                Do you work with clients outside Sirajganj?
+              </button>
+            </h2>
+            <div
+              id="c2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#contactFaq"
+            >
+              <div class="accordion-body">
+                Yes — I work remotely with clients anywhere. Everything can be
+                handled online, from planning to delivery.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c3"
+              >
+                What should I include in my message?
+              </button>
+            </h2>
+            <div
+              id="c3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#contactFaq"
+            >
+              <div class="accordion-body">
+                A short description of your project, your timeline and budget if
+                you have one, and any example sites you like.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#c4"
+              >
+                How do we get started?
+              </button>
+            </h2>
+            <div
+              id="c4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#contactFaq"
+            >
+              <div class="accordion-body">
+                Send a message through this form or email me directly. I'll reply
+                with next steps and a quote.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <img
+              src="https://i.ibb.co.com/rRVbq5T1/0ba6f5ba-e476-49f8-8f99-a8fcba54aa76-removebg-preview.png"
+              alt="Ahad Hossain logo"
+              height="46"
+              class="mb-3"
+            />
+            <p>
+              Web designer &amp; front-end developer crafting clean, responsive
+              websites that help people and small businesses look great online.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Quick Links</h5>
+            <div class="footer-links d-flex flex-column">
+              <a href="index.html">Home</a>
+              <a href="service.html">Service</a>
+              <a href="about.html">About Us</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <h5 class="mb-3">Contact</h5>
+            <p class="mb-2">
+              <i class="bi bi-geo-alt me-2"></i>Hosenpur, Sirajganj Sadar,
+              Sirajganj 6700
+            </p>
+            <p class="mb-2"><i class="bi bi-telephone me-2"></i>+880 1790-156861</p>
+            <p class="mb-0">
+              <i class="bi bi-envelope me-2"></i>ahadhossain@gmail.com
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Follow Me</h5>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
         <div class="row align-items-center">
-          <!-- Left -->
           <div class="col-md-8 text-center text-md-start">
             <p class="mb-1">
               &copy; <span id="year"></span> Ahad Hossain. All rights reserved.
             </p>
-
-            <p class="mb-0" id="currentDate"></p>
+            <p class="mb-0 small" id="currentDate"></p>
           </div>
-
-          <!-- Right -->
-          <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-twitter"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-linkedin"></i>
-            </a>
+          <div class="col-md-4 text-center text-md-end mt-2 mt-md-0">
+            <a href="#top" class="text-white"
+              ><i class="bi bi-arrow-up-circle me-1"></i>Back to top</a
+            >
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const now = new Date();
-
-      document.getElementById("year").textContent = now.getFullYear();
-
-      document.getElementById("currentDate").textContent = now.toString();
-    </script>
+    <script src="assets/main.js"></script>
   </body>
 </html>

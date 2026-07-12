@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service</title>
+    <title>Services — Ahad Hossain</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,70 +15,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <style>
-      .nav-item-custom {
-        padding: 5px 10px;
-        transition: all 0.3s ease;
-        text-decoration: underline;
-      }
-
-      .nav-item-custom:hover {
-        background-color: white;
-        color: #0dcaf0 !important;
-        border-radius: 50px;
-        padding: 5px 10px;
-        text-decoration: underline;
-      }
-      .nav-active {
-        background-color: white;
-        color: #0dcaf0 !important;
-        border-radius: 50px;
-        padding: 5px 10px;
-        text-decoration: underline;
-      }
-      .carousel-img {
-        height: 90vh;
-        object-fit: cover;
-      }
-      .hover-card {
-        transition: all 0.3s ease;
-      }
-
-      .hover-card:hover {
-        border: #0dcaf0 1px solid;
-        transform: translateY(-6px);
-        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
-      }
-      footer a {
-        text-decoration: none;
-        display: inline-block;
-        line-height: 1;
-      }
-
-      footer a:hover {
-        text-decoration: none;
-      }
-
-      @media (max-width: 768px) {
-        .carousel-img {
-          height: 400px;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient">
+    <nav
+      id="top"
+      class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient sticky-top"
+    >
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="index.html">
           <img
             src="https://i.ibb.co.com/rRVbq5T1/0ba6f5ba-e476-49f8-8f99-a8fcba54aa76-removebg-preview.png"
-            alt="Logo"
+            alt="Ahad Hossain logo"
             height="50"
           />
         </a>
 
-        <!-- Mobile Toggle Button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -90,44 +49,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="index.html"
                 >Home</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link nav-active text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link nav-active text-white nav-item-custom fw-bold px-3"
                 href="service.html"
                 >Service</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="about.html"
                 >About Us</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="contact.html"
                 >Contact Us</a
               >
             </li>
-
             <li class="nav-item">
               <a
-                class="nav-link text-white text-decoration-none nav-item-custom fw-bold px-3"
+                class="nav-link text-white nav-item-custom fw-bold px-3"
                 href="portfolio.html"
                 >Portfolio</a
               >
@@ -141,24 +95,16 @@
     <section
       class="d-flex align-items-center justify-content-center text-center text-white"
       style="
-        height: 85vh;
+        height: 80vh;
         background:
-          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-          url(&quot;https://images.unsplash.com/photo-1766066014237-00645c74e9c6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=1600&quot;)
+          linear-gradient(rgba(8, 126, 151, 0.55), rgba(15, 23, 42, 0.55)),
+          url('https://images.unsplash.com/photo-1766066014237-00645c74e9c6?q=80&w=870&auto=format&fit=crop')
             center/cover;
       "
     >
       <div class="container">
-        <h1 class="display-2 fw-bold">Our Services</h1>
-
-        <p class="lead my-4">Lorem ipsum dolor sit amet consectetur</p>
-
-        <a
-          href="#"
-          class="btn btn-info text-decoration-none btn-lg nav-item-custom px-4"
-        >
-          Get Started
-        </a>
+        <h1 class="display-2 fw-bold text-white mb-4">Our Services</h1>
+        <a href="#pricing" class="btn btn-info btn-lg px-4">See Pricing</a>
       </div>
     </section>
 
@@ -166,68 +112,196 @@
     <section class="py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <p class="text-info fw-bold mb-2">SOLUTIONS</p>
-
-          <h2 class="display-5 fw-bold">Professional Services</h2>
+          <span class="section-eyebrow">Solutions</span>
+          <h2 class="display-6 fw-bold">Professional Services</h2>
         </div>
 
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
-            <div class="card text-center h-100 shadow-sm hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body p-5">
-                <div
-                  class="border border-info bg-opacity-10 rounded-circle d-inline-flex justify-content-center align-items-center mb-4"
-                  style="width: 70px; height: 70px"
-                >
-                  <i class="bi bi-code-slash fs-1 text-info"></i>
-                </div>
-
+                <span class="feature-icon mb-4"
+                  ><i class="bi bi-code-slash"></i
+                ></span>
                 <h3 class="fw-bold mb-3">Web Development</h3>
-
-                <p class="text-muted">
-                  Building responsive and high-performance applications using
-                  React, Bootstrap and modern frontend technologies.
+                <p class="mb-0">
+                  Responsive, high-performance sites built with clean HTML, CSS,
+                  JavaScript and Bootstrap.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card text-center h-100 shadow-sm hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body p-5">
-                <div
-                  class="border border-info bg-opacity-10 rounded-circle d-inline-flex justify-content-center align-items-center mb-4"
-                  style="width: 70px; height: 70px"
-                >
-                  <i class="bi bi-shield-lock fs-1 text-info"></i>
-                </div>
-
-                <h3 class="fw-bold mb-3">Digital Privacy</h3>
-
-                <p class="text-muted">
-                  Consulting on anonymity tools, secure operating systems and
-                  protecting sensitive digital assets.
+                <span class="feature-icon mb-4"
+                  ><i class="bi bi-palette"></i
+                ></span>
+                <h3 class="fw-bold mb-3">Web Design</h3>
+                <p class="mb-0">
+                  Modern, mobile-first layouts and interfaces designed around your
+                  brand and your users.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 mx-md-auto">
-            <div class="card text-center h-100 shadow-sm hover-card">
+          <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body p-5">
-                <div
-                  class="border border-info bg-opacity-10 rounded-circle d-inline-flex justify-content-center align-items-center mb-4"
-                  style="width: 70px; height: 70px"
-                >
-                  <i class="bi bi-cpu fs-1 text-info"></i>
-                </div>
-
-                <h3 class="fw-bold mb-3">System Engineering</h3>
-
-                <p class="text-muted">
-                  Specialized Linux environment setup, virtual machines and
-                  server configuration.
+                <span class="feature-icon mb-4"
+                  ><i class="bi bi-speedometer2"></i
+                ></span>
+                <h3 class="fw-bold mb-3">Speed &amp; SEO</h3>
+                <p class="mb-0">
+                  On-page SEO and performance tuning so your pages load fast and
+                  rank better.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I Work (numbered process) -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">The Process</span>
+          <h2 class="display-6 fw-bold">How I Work</h2>
+          <p class="fs-6">Four simple steps from idea to launch.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-number">1</span>
+              <h5 class="fw-bold mb-2">Discovery</h5>
+              <p class="mb-0">
+                We talk through your goals, content and references so I understand
+                exactly what you need.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-number">2</span>
+              <h5 class="fw-bold mb-2">Design</h5>
+              <p class="mb-0">
+                I design a clean, responsive layout and share it for your feedback
+                before any code is written.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-number">3</span>
+              <h5 class="fw-bold mb-2">Development</h5>
+              <p class="mb-0">
+                I build the site with semantic HTML, CSS and JavaScript, tested
+                across devices.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <span class="step-number">4</span>
+              <h5 class="fw-bold mb-2">Launch</h5>
+              <p class="mb-0">
+                We publish, I hand everything over, and I stay available for
+                updates and support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">Pricing</span>
+          <h2 class="display-6 fw-bold">Simple, honest pricing</h2>
+          <p class="fs-6">Pick a package, or contact me for a custom quote.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Starter -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card pricing-card text-center h-100 hover-card">
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-uppercase">Starter</h5>
+                <p class="text-muted mb-3">For a simple one-page site</p>
+                <div class="price mb-1">
+                  <span class="fs-5 align-top">Tk</span> 5,000
+                </div>
+                <p class="text-muted small mb-4">one-time</p>
+                <ul class="pricing-list text-start mb-4">
+                  <li><i class="bi bi-check-lg"></i>1-page responsive site</li>
+                  <li><i class="bi bi-check-lg"></i>Mobile-friendly layout</li>
+                  <li><i class="bi bi-check-lg"></i>Contact form</li>
+                  <li><i class="bi bi-check-lg"></i>Basic on-page SEO</li>
+                  <li><i class="bi bi-check-lg"></i>3-day delivery</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-info w-100"
+                  >Choose Starter</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Business (popular) -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card pricing-card popular text-center h-100 hover-card position-relative"
+            >
+              <span class="pricing-badge">Most Popular</span>
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-uppercase">Business</h5>
+                <p class="text-muted mb-3">For growing businesses</p>
+                <div class="price mb-1">
+                  <span class="fs-5 align-top">Tk</span> 12,000
+                </div>
+                <p class="text-muted small mb-4">one-time</p>
+                <ul class="pricing-list text-start mb-4">
+                  <li><i class="bi bi-check-lg"></i>Up to 5 pages</li>
+                  <li><i class="bi bi-check-lg"></i>Responsive design</li>
+                  <li><i class="bi bi-check-lg"></i>Contact form + map</li>
+                  <li><i class="bi bi-check-lg"></i>On-page SEO</li>
+                  <li><i class="bi bi-check-lg"></i>Speed optimization</li>
+                  <li><i class="bi bi-check-lg"></i>7-day delivery, 2 revisions</li>
+                </ul>
+                <a href="contact.html" class="btn btn-info text-white w-100"
+                  >Choose Business</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Pro -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card pricing-card text-center h-100 hover-card">
+              <div class="card-body p-4">
+                <h5 class="fw-bold text-uppercase">Pro</h5>
+                <p class="text-muted mb-3">For a fully custom build</p>
+                <div class="price mb-1">
+                  <span class="fs-5 align-top">Tk</span> 25,000
+                </div>
+                <p class="text-muted small mb-4">starting at</p>
+                <ul class="pricing-list text-start mb-4">
+                  <li><i class="bi bi-check-lg"></i>Unlimited pages</li>
+                  <li><i class="bi bi-check-lg"></i>Fully custom design</li>
+                  <li><i class="bi bi-check-lg"></i>Advanced SEO</li>
+                  <li><i class="bi bi-check-lg"></i>Performance tuning</li>
+                  <li><i class="bi bi-check-lg"></i>1 month of support</li>
+                  <li><i class="bi bi-check-lg"></i>Priority delivery</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-info w-100"
+                  >Choose Pro</a
+                >
               </div>
             </div>
           </div>
@@ -239,60 +313,64 @@
     <section class="py-5 bg-light">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="display-6">Our Client</h2>
+          <span class="section-eyebrow">Trusted By</span>
+          <h2 class="display-6 fw-bold">People I've Worked With</h2>
         </div>
 
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
-            <div class="card text-center h-100 shadow-sm hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body">
                 <img
                   src="https://randomuser.me/api/portraits/men/31.jpg"
                   class="rounded-circle mb-3"
-                  width="120"
+                  width="110"
+                  height="110"
+                  alt="Alif Rahman"
                 />
-
-                <h4>Alif</h4>
-
-                <p class="text-muted">Founder Of RAB</p>
-
-                <button class="btn btn-outline-warning">More Info</button>
+                <h4 class="fw-bold mb-1">Alif Rahman</h4>
+                <p class="text-muted">Founder, Local Bakery</p>
+                <a href="contact.html" class="btn btn-outline-info btn-sm"
+                  >More Info</a
+                >
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card text-center h-100 shadow-sm hover-card">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body">
                 <img
                   src="https://randomuser.me/api/portraits/women/65.jpg"
                   class="rounded-circle mb-3"
-                  width="120"
+                  width="110"
+                  height="110"
+                  alt="Sadia Yasmin"
                 />
-
-                <h4>Mix SY</h4>
-
-                <p class="text-muted">Founder Of RAB</p>
-
-                <button class="btn btn-outline-warning">More Info</button>
+                <h4 class="fw-bold mb-1">Sadia Yasmin</h4>
+                <p class="text-muted">Owner, Boutique Shop</p>
+                <a href="contact.html" class="btn btn-outline-info btn-sm"
+                  >More Info</a
+                >
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 mx-md-auto">
-            <div class="card text-center h-100 shadow-sm hover-card">
+          <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <div class="card text-center h-100 hover-card">
               <div class="card-body">
                 <img
                   src="https://randomuser.me/api/portraits/men/45.jpg"
                   class="rounded-circle mb-3"
-                  width="120"
+                  width="110"
+                  height="110"
+                  alt="Tanvir Ahmed"
                 />
-
-                <h4>GTs SA</h4>
-
-                <p class="text-muted">Founder Of RAB</p>
-
-                <button class="btn btn-outline-warning">More Info</button>
+                <h4 class="fw-bold mb-1">Tanvir Ahmed</h4>
+                <p class="text-muted">Coach &amp; Consultant</p>
+                <a href="contact.html" class="btn btn-outline-info btn-sm"
+                  >More Info</a
+                >
               </div>
             </div>
           </div>
@@ -300,11 +378,16 @@
       </div>
     </section>
 
-    <!--  Accordion -->
+    <!-- FAQ Accordion -->
     <section class="py-5">
       <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 class="display-6 fw-bold">Frequently Asked Questions</h2>
+        </div>
+
         <div class="accordion" id="faqAccordion">
-          <div class="accordion-item text-info">
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button"
@@ -312,23 +395,22 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#one"
               >
-                What is the main goal?
+                What kind of websites do you build?
               </button>
             </h2>
-
             <div
               id="one"
               class="accordion-collapse collapse show"
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Our goal is to provide modern web solutions with excellent user
-                experience.
+                Business sites, portfolios, landing pages and small e-commerce
+                fronts — all responsive and built to load fast.
               </div>
             </div>
           </div>
 
-          <div class="accordion-item text-info">
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -336,23 +418,23 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#two"
               >
-                How are questions organized?
+                How long does a project take?
               </button>
             </h2>
-
             <div
               id="two"
               class="accordion-collapse collapse"
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Questions are grouped into expandable sections for easier
-                navigation.
+                A one-page site takes about 3 days; a 5-page business site around
+                a week. Larger projects depend on scope — I'll give you a clear
+                timeline up front.
               </div>
             </div>
           </div>
 
-          <div class="accordion-item text-info">
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -360,22 +442,22 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#three"
               >
-                Accordion Item #3
+                Do you offer revisions?
               </button>
             </h2>
-
             <div
               id="three"
               class="accordion-collapse collapse"
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Yes. Every package includes revisions so we can fine-tune the
+                design until you're happy with it.
               </div>
             </div>
           </div>
 
-          <div class="accordion-item text-info">
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -383,22 +465,23 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#four"
               >
-                Accordion Item #4
+                What do you need from me to start?
               </button>
             </h2>
-
             <div
               id="four"
               class="accordion-collapse collapse"
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Your content (text, logo, images) and a few examples of sites you
+                like. If you don't have everything ready, I can help you plan it
+                out.
               </div>
             </div>
           </div>
 
-          <div class="accordion-item text-info">
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -406,17 +489,17 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#five"
               >
-                Accordion Item #5
+                Do you provide support after launch?
               </button>
             </h2>
-
             <div
               id="five"
               class="accordion-collapse collapse"
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Absolutely. I'm available for fixes, small updates and future
+                improvements after your site goes live.
               </div>
             </div>
           </div>
@@ -424,51 +507,95 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-info bg-opacity-75 text-white py-4 mt-5">
+    <!-- CTA Band -->
+    <section class="cta-band py-5">
+      <div class="container text-center py-3">
+        <h2 class="fw-bold mb-3">Ready to start your project?</h2>
+        <p class="fs-5 mb-4">
+          Tell me what you need and I'll get back to you with a plan.
+        </p>
+        <a href="contact.html" class="btn btn-light btn-lg px-5 fw-bold"
+          >Get a Quote</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer pt-5 pb-4">
       <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <img
+              src="https://i.ibb.co.com/rRVbq5T1/0ba6f5ba-e476-49f8-8f99-a8fcba54aa76-removebg-preview.png"
+              alt="Ahad Hossain logo"
+              height="46"
+              class="mb-3"
+            />
+            <p>
+              Web designer &amp; front-end developer crafting clean, responsive
+              websites that help people and small businesses look great online.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-6">
+            <h5 class="mb-3">Quick Links</h5>
+            <div class="footer-links d-flex flex-column">
+              <a href="index.html">Home</a>
+              <a href="service.html">Service</a>
+              <a href="about.html">About Us</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <h5 class="mb-3">Contact</h5>
+            <p class="mb-2">
+              <i class="bi bi-geo-alt me-2"></i>Hosenpur, Sirajganj Sadar,
+              Sirajganj 6700
+            </p>
+            <p class="mb-2"><i class="bi bi-telephone me-2"></i>+880 1790-156861</p>
+            <p class="mb-0">
+              <i class="bi bi-envelope me-2"></i>ahadhossain@gmail.com
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Follow Me</h5>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider my-4" />
+
         <div class="row align-items-center">
-          <!-- Left -->
           <div class="col-md-8 text-center text-md-start">
             <p class="mb-1">
               &copy; <span id="year"></span> Ahad Hossain. All rights reserved.
             </p>
-
-            <p class="mb-0" id="currentDate"></p>
+            <p class="mb-0 small" id="currentDate"></p>
           </div>
-
-          <!-- Right -->
-          <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-twitter"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="#" class="text-white nav-item-custom mx-2 fs-3">
-              <i class="bi bi-linkedin"></i>
-            </a>
+          <div class="col-md-4 text-center text-md-end mt-2 mt-md-0">
+            <a href="#top" class="text-white"
+              ><i class="bi bi-arrow-up-circle me-1"></i>Back to top</a
+            >
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const now = new Date();
-
-      document.getElementById("year").textContent = now.getFullYear();
-
-      document.getElementById("currentDate").textContent = now.toString();
-    </script>
+    <script src="assets/main.js"></script>
   </body>
 </html>
